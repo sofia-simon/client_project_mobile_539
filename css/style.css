@@ -1,0 +1,332 @@
+/* ----skip to main content----  */
+.skip-link a {
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: -40px;
+}
+
+.skip-link a:focus {
+    top: 20px;
+}
+
+/* ----background of site---- */
+body, footer {
+    background-color: #00274C;
+}
+
+/* ----focus---- */
+*:focus {
+    border: 2px solid white;
+}
+
+/* ----grid-setup---- */
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 15px 15px 15px 15px;
+    /* grid-row-gap: 20px; */
+    gap: 20px;
+}
+
+/* ----main grids---- */
+section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 15px 15px 15px 15px;
+    /* grid-row-gap: 20px; */
+    gap: 20px;
+}
+
+h2, h3, p, ol, ul {
+    grid-column: 1/-1;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+/* article formatting */
+.article {
+    grid-column: 1/-1;
+}
+
+.article h3, .article figure, .article p {
+    margin-bottom: 10px;
+}
+
+/* item 4 formatting */
+.item-4 {
+    display: block;
+}
+
+.item-4 ul li {
+    margin-bottom: 10px;
+}
+
+.item-4 h2, .item-4 h3, .item-4 figure, .item-4 p{
+    margin-bottom: 20px;
+}
+
+/* ----Header Logo---- */
+.header-logo {
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+/* ----navigation---- */
+/* nav ul li a:hover {
+    text-decoration: 1px underline black;
+} */
+
+nav {
+    grid-column: 1/-1;
+}
+
+nav ul {
+    grid-column: 1/-1;
+    /* display: grid;
+    grid-template-columns: 1fr; Forces a single-column layout for list items */
+}
+
+nav ul li {
+    background-color: #FFCB05;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+nav ul li:last-of-type {
+    margin-bottom: 0px;
+}
+
+nav ul li a {
+    color: #00274C;
+    display: block; /* Ensures the entire list item is clickable */
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline black 1px;
+}
+
+.selected {
+    text-decoration: 2px underline #00274C;
+}
+
+/* ----h1---- */
+h1 {
+    grid-column: 1/-1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* ----h2---- */
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFCB05;
+    text-align: left;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* ----h3---- */
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-align: left;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: 1px underline #ffffff;
+}
+
+/* ----p---- */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-align: left;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ----figcaption---- */
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ----a---- */
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFCB05;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: 2px underline #FFCB05;
+}
+
+/* ----list items normal---- */
+/* ol {
+} */
+.list {
+    list-style-position: inside; /*inquire about this*/
+    margin-left: 20px;
+}
+
+.list .list-item {
+    list-style-type: disc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ----list items links---- */
+
+/* ol li {
+    list-style-type: disc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+} */
+
+/* ----other---- */
+#image-span-columns { /*why has to be an id, class didn't work*/
+    grid-column: 1/-1;
+    justify-self: center;
+}
+
+ol li, ul li {
+    margin-bottom: 10px;
+}
+
+/* ----footer---- */
+footer p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff10;
+}
+
+
+/* --------Tutoring page only-------- */
+.caption {
+    margin-left: 15px;
+}
+
+/* --------maize and blue only-------- */
+
+iframe {
+    max-width: 100%;
+    min-width: 75%;
+    margin: auto;
+}
+
+.m-b-item-1 {
+    display: block;
+}
+
+.m-b-item-1 ul li {
+    margin-bottom: 10px;
+}
+
+.m-b-item-1 h2, .m-b-item-1 h3, .m-b-item-1 figure, .m-b-item-1 p{
+    margin-bottom: 20px;
+}
+
+#what-we-provide-section {
+    background-color: #2F65A7;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px 30px;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+#what-we-provide-section img {
+    width: 50%;
+}
+
+#what-we-provide-section div {
+    text-align: center;
+    /* justify-content: center; */
+}
+
+#what-we-provide-section h2 {
+    text-align: center;
+}
+
+#content #welcome, #content #provide {
+    margin-left: 15px;
+}
+
+
+/* --------advising-------- */
+.button {
+    background-color: #FFCB05;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.button{
+    text-decoration: none;
+    color: #00274C;
+    display: block; /* Ensures the entire list item is clickable */
+    padding: 10px;
+    text-decoration: none;
+}
+
+.button:last-of-type {
+    margin-bottom: 0px;
+}
+
+
+/* --------advising------- */
+.list-container, .button-container {
+    grid-column: 1/-1;
+}
+
+.a-item-2 {
+    gap: 0px;
+}
+
+.a-item-2 h2 {
+    margin-bottom: 20px;
+}
